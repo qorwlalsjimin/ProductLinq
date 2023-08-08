@@ -8,5 +8,14 @@ namespace ProductLinq
 {
     internal class Product
     {
+        public string Name { get; set; } 
+        public int Price { get; set; }
+
+        public override string ToString()
+        {
+            //감자: 500원
+            return Name + ": " + Price + "원";
+        }
+
     }
 }
